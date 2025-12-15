@@ -1,0 +1,59 @@
+{
+  "75b4034a-4bb1-4ed9-b4e6-84f90b0d6a2e": {
+    "username": null,
+    "chat_history": [],
+    "created_at": "2025-12-15 16:31:48"
+  },
+  "4e2cf71d-ba4d-49d9-8bdf-ece1e96557b1": {
+    "username": null,
+    "chat_history": [],
+    "created_at": "2025-12-15 16:35:37"
+  },
+  "a20136f5-ded4-4ecd-8178-2a5366cdef78": {
+    "username": null,
+    "chat_history": [],
+    "created_at": "2025-12-15 16:36:32"
+  },
+  "84ee44b4-62de-4d1c-b976-737b777e6da4": {
+    "username": null,
+    "chat_history": [
+      {
+        "timestamp": "16:47",
+        "user": "hello",
+        "bot": "Hello! 👋 Ask me anything!",
+        "time": "2025-12-15 16:47:32"
+      },
+      {
+        "timestamp": "16:47",
+        "user": "what is the time",
+        "bot": "⏰ 04:47 PM",
+        "time": "2025-12-15 16:47:40"
+      },
+      {
+        "timestamp": "16:47",
+        "user": "tell me a joke",
+        "bot": "🐻 What do you call a bear with no teeth? A gummy bear!",
+        "time": "2025-12-15 16:47:52"
+      },
+      {
+        "timestamp": "16:48",
+        "user": "that was funny",
+        "bot": "📚 **About That Was Funny:**\n\nRondell Jerome Sheridan is an American actor, comedian and television director, best known for his role of Victor Baxter in the Disney Channel sitcom That's So Raven, as well as its later spin-offs Cory in the House and Raven's Home. Sheridan is an alumnus of Marquette University. Sheridan also starred as Dr. Ron Aimes on the NBC/UPN sitcom Minor Adjustments.\n\n🔗 **Source:** [Wikipedia - Rondell Sheridan](https://en.wikipedia.org/wiki/Rondell_Sheridan)",
+        "time": "2025-12-15 16:48:08"
+      },
+      {
+        "timestamp": "16:48",
+        "user": "who is isaac nwton",
+        "bot": "📚 **About Isaac Nwton:**\n\nSir Isaac Newton was an English polymath who was a mathematician, physicist, astronomer, alchemist, theologian, author and inventor. He was a key figure in the Scientific Revolution and the Enlightenment that followed. His book Philosophiæ Naturalis Principia Mathematica, first published in 1687, achieved the first great unification in physics and established classical mechanics. Newton also made seminal contributions to optics, and shares credit with the German mathematician Gottfried Wilhelm Leibniz for formulating infinitesimal calculus, although he developed calculus years before Leibniz. Newton contributed to and refined the scientific method, and his work is considered the most influential in bringing forth modern science.\n\n🔗 **Source:** [Wikipedia - Isaac Newton](https://en.wikipedia.org/wiki/Isaac_Newton)",
+        "time": "2025-12-15 16:48:37"
+      },
+      {
+        "timestamp": "16:48",
+        "user": "good work",
+        "bot": "Ask me a specific question! 😊",
+        "time": "2025-12-15 16:48:55"
+      }
+    ],
+    "created_at": "2025-12-15 16:39:29"
+  }
+}

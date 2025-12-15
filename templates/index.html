@@ -1,0 +1,173 @@
+<!-- Save as: templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🤖 AI ChatBot - Web Edition</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-robot"></i>
+                    <h1>AI ChatBot</h1>
+                </div>
+                <div class="user-info">
+                    <div id="username-display">
+                        {% if username %}
+                        <span class="welcome">Welcome, <strong>{{ username }}</strong>!</span>
+                        {% else %}
+                        <button id="set-name-btn" class="btn-set-name">
+                            <i class="fas fa-user-plus"></i> Set Your Name
+                        </button>
+                        {% endif %}
+                    </div>
+                    <div class="status">
+                        <i class="fas fa-circle online"></i> Online
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Chat Area -->
+        <main class="chat-container">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar-section">
+                    <h3><i class="fas fa-bolt"></i> Quick Actions</h3>
+                    <div class="quick-actions">
+                        <button class="quick-btn" data-action="time">
+                            <i class="fas fa-clock"></i> Time
+                        </button>
+                        <button class="quick-btn" data-action="date">
+                            <i class="fas fa-calendar"></i> Date
+                        </button>
+                        <button class="quick-btn" data-action="joke">
+                            <i class="fas fa-laugh"></i> Joke
+                        </button>
+                        <button class="quick-btn" data-action="weather">
+                            <i class="fas fa-cloud-sun"></i> Weather
+                        </button>
+                        <button class="quick-btn" data-action="help">
+                            <i class="fas fa-question-circle"></i> Help
+                        </button>
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3><i class="fas fa-history"></i> Chat Info</h3>
+                    <div class="chat-info">
+                        <p>Messages: <span id="message-count">0</span></p>
+                        <button id="clear-chat" class="btn-clear">
+                            <i class="fas fa-trash"></i> Clear Chat
+                        </button>
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3><i class="fas fa-info-circle"></i> About</h3>
+                    <div class="about-info">
+                        <p>This is an AI ChatBot powered by Python and Flask. It can help you with various tasks and have natural conversations.</p>
+                        <p class="tech">
+                            <i class="fab fa-python"></i> Python |
+                            <i class="fas fa-server"></i> Flask |
+                            <i class="fas fa-code"></i> JavaScript
+                        </p>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Chat Messages Area -->
+            <section class="chat-area">
+                <div class="chat-header">
+                    <h2><i class="fas fa-comments"></i> Chat with AI</h2>
+                    <div class="chat-stats">
+                        <i class="fas fa-circle online"></i> AI Assistant Active
+                    </div>
+                </div>
+
+                <div class="messages-container" id="messages-container">
+                    <!-- Welcome message -->
+                    <div class="message bot-message">
+                        <div class="message-avatar">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="message-content">
+                            <div class="message-sender">AI Assistant</div>
+                            <div class="message-text">
+                                <strong>🎉 Welcome to AI ChatBot! 🎉</strong><br><br>
+                                I'm your intelligent AI assistant ready to help you with:<br>
+                                • Time and date information ⏰📅<br>
+                                • Funny jokes and humor 😂<br>
+                                • General conversation and questions 💬<br><br>
+                                You can type your message below or use the quick action buttons! 😊<br><br>
+                                What would you like to do today?
+                            </div>
+                            <div class="message-time" id="current-time"></div>
+                        </div>
+                    </div>
+                    <!-- Messages will be dynamically added here -->
+                </div>
+
+                <!-- Input Area -->
+                <div class="input-area">
+                    <div class="input-wrapper">
+                        <div class="emoji-picker">
+                            <button id="emoji-btn" class="emoji-btn">
+                                <i class="far fa-smile"></i>
+                            </button>
+                            <div class="emoji-container" id="emoji-container">
+                                <!-- Emojis will be added by JavaScript -->
+                            </div>
+                        </div>
+                        <input 
+                            type="text" 
+                            id="user-input" 
+                            placeholder="Type your message here... (Press Enter to send)"
+                            autocomplete="off"
+                        >
+                        <button id="send-btn" class="send-btn">
+                            <i class="fas fa-paper-plane"></i> Send
+                        </button>
+                    </div>
+                    <div class="input-hints">
+                        <span class="hint"><i class="fas fa-lightbulb"></i> Try: "What time is it?" or "Tell me a joke"</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>🤖 AI ChatBot v2.0 | Built with Python & Flask | © 2024</p>
+        </footer>
+    </div>
+
+    <!-- Name Modal -->
+    <div class="modal" id="name-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fas fa-user-edit"></i> Set Your Name</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Enter your name so I can address you personally:</p>
+                <input type="text" id="name-input" placeholder="Enter your name..." autocomplete="off">
+            </div>
+            <div class="modal-footer">
+                <button class="btn-secondary close-modal">Cancel</button>
+                <button class="btn-primary" id="save-name">Save Name</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
