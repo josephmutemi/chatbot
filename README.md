@@ -106,10 +106,9 @@ From the project root directory:
 bash
 Copy code
 pip install flask requests beautifulsoup4 googlesearch-python
-5. Minimal Working Example (Chatbot MVP)
-Project Structure
-text
-Copy code
+## 5. Minimal Working Example (Chatbot MVP)
+
+### Project Structure
 CHATBOT/
 │
 ├── README.md
@@ -119,36 +118,34 @@ CHATBOT/
 ├── users_data.json
 │
 ├── templates/
-│   └── index.html
+│ └── index.html
 │
 ├── static/
-│   ├── css/
-│   │   └── style.css
-│   └── js/
-│       └── script.js
-Core Files Explained
-main.py
-Application entry point that starts the Flask server.
+│ ├── css/
+│ │ └── style.css
+│ └── js/
+│ └── script.js
 
-chatbot_app.py
-Defines Flask routes, handles HTTP requests, manages chat history and usernames.
+text
 
-smart_chatbot.py
-Contains chatbot logic, response generation, and optional web search functionality.
+### Core Files Explained
+- **main.py:** Application entry point that starts the Flask server.
+- **chatbot_app.py:** Defines Flask routes, handles HTTP requests, manages chat history and usernames.
+- **smart_chatbot.py:** Contains chatbot logic, response generation, and optional web search functionality.
 
-How to Run the Chatbot
-Navigate to the Project Directory
-bash
-Copy code
-cd CHATBOT
+### How to Run the Chatbot
+1. **Navigate to the Project Directory**
+   ```bash
+   cd CHATBOT
 Start the Server
+
 bash
-Copy code
 python main.py
 Open Your Browser
+
 text
-Copy code
 http://127.0.0.1:5000
+
 6. Web Application Behavior
 Available Routes
 Route	Method	Description
