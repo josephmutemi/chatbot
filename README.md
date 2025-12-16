@@ -1,107 +1,227 @@
-# CHATBOT
- ##### By Susan Mageto, Brian Masafu, edith Nekesa, Neema Oribo Charles Muvaka, Loiss Muthoni
- ### It is a pharmaceutical ordering website - PataPharm.
- ## Table of Content
- + [Description](#description)
- + [Installation Requirement](#Installation)
- + [Technology Used](#technology-used)
- + [Reference](#reference)
- + [Authors Info](#author-Info)
- ## Description
- <p>PhataPharm is a website that offers users the ability to search and order pharmaceutical products from nearby pharmacies sorrounding them.</p>
- 
- ## Installation
- ### Requirements
- * Either a computer,phone,tablet or an Ipad
- * An access to the Internet
- ## Technology Used
- * HTML - which was used to build the structure of the pages.
- * CSS - which was used to style the pages incuding the left aside navigation bar
- * JavaScript - Used in manipulating the html content.
-  * jQuery - Used in manipulating the html content.
- ### SetUp instructions and installation
- * Clone this repository to a location in your file system.
- * Open terminal command line then navigate to the root folder of the application. 
- * Open index.html on your Browser.
-  ```
-    $ git clone  https://github.com/CharlesMuvaka12345/PataPharm.git
-    $ cd ../path/to/the/file
-    $ code .
-   ```
-   [Go Back to the top](#PataPharm)
-   
- ## Live link
- https://charlesmuvaka12345.github.io/PataPharm/
-   
- ## Behaviour Driven Development
- * There is a form to collect users location
-   * Input - Enter your location
-   * output - Welcome to pharmacies in your location.
+# 🤖 Prompt-Powered Kickstart: A Beginner's Toolkit for Python & Flask Chatbots
 
-   * Display an error if the button clicked with an empty input
-     * output - Enter your location
+##### By Joseph Mutemi
 
- * There is a form to collect users requested medicine.
-   * Input - search for medicines.
-   * output - lists of the drug with price from different pharmacies.
+---
 
-   * Displays an error if button clicked with an empty search.
-     * output - Please enter Medicine you want.
-     
- 
+## 1. Title & Objective
 
-   [Go Back to the top](#PataPharm)
- ## DevelopMent
- <p> Need to contribute?? Follow the following steps.</p>
+### Title
+Prompt-Powered Kickstart: A Beginner's Toolkit for Python & Flask Chatbots
 
- * Fork the repo
- * Create a new branch 
- ```
-  $ git switch -c (improve-feature)
-  ```
- * Make the required changes in the file.
- * Add changes to reflect the changes made.
- * Commit your changes.
-  ```
-  $ git commit -am (improve-feature)
-  ```
- * Push to the branch
-  ```
-  $ git push origin (improve-feature)
-   ```
- * Create a Pull Request
+### Objective
+This project documents the journey of building a beginner-friendly **Python-based chatbot** using **Flask**.  
+It demonstrates a clear learning progression, starting from chatbot logic and evolving into a fully functional web-based chatbot with a frontend UI.
 
- ## Known Bugs
- <p>If you find any bug, open an issue <a href="https://github.com/CharlesMuvaka12345/PataPharm/issues">here</a> by including your search query and the expected result.</p>
- <p>Any suggestions or corrections to the code would highly be appreciated</p>
+The goal of this project is to provide a **clear and replicable guide** for beginners and transitioning developers to:
 
-  * link to live site: 
+- Set up a Python development environment
+- Build a basic chatbot engine
+- Expose the chatbot via a Flask backend
+- Create an interactive frontend using HTML, CSS, and JavaScript
+- Use AI tools to accelerate learning, debugging, and documentation
 
- ## Reference
- * Materialize CSS
- [Go Back to the top](#PataPharm)
+### Why Python & Flask?
 
-  ## License 
- MIT License
+Python was chosen for its simplicity, readability, and rich ecosystem.  
+Flask was selected because it is lightweight, flexible, and ideal for learning backend web development fundamentals.
 
-Copyright (c) 2022 Charles Muvaka
+### End Goal
+The project results in **one functional MVP**:
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+- A **web-based chatbot application** that accepts user messages, processes them with Python logic, and returns responses through a Flask API with a browser-based UI.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+---
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-[Go Back to the top](#PataPharm)
- ## Authors Info
+## 2. Quick Summary of the Technology
+
+### What is Python?
+Python is a high-level programming language known for its simple syntax and rapid development.  
+It is widely used in web development, automation, AI, and data science.
+
+### What is Flask?
+Flask is a lightweight Python web framework that provides routing, request handling, and templating while allowing developers full control over application structure.
+
+### Where Are They Used?
+- **Python:** APIs, automation, AI systems, web backends
+- **Flask:** Microservices, REST APIs, lightweight web applications
+
+### Real-World Examples
+- Instagram (Python backend components)
+- Reddit & Pinterest (Flask-based services)
+
+---
+
+## 3. System Requirements
+
+### Operating System
+- Windows (tested)
+- macOS
+- Linux
+
+### Tools & Editors
+- Python 3.10+
+- pip (Python package manager)
+- VS Code (recommended)
+- Git (optional)
+
+---
+
+## 4. Installation & Setup Instructions
+
+## Step 1: Install Python
+
+### Windows
+1. Download Python from: https://www.python.org/downloads/
+2. **IMPORTANT:** Check **Add Python to PATH** during installation
+3. Complete the installation
+
+### macOS / Linux
+Check if Python is already installed:
+
+```bash
+python3 --version
+If Not Installed
+Linux
+bash
+Copy code
+sudo apt install python3 python3-pip
+macOS
+bash
+Copy code
+brew install python
+Step 2: Verify Installation
+bash
+Copy code
+python --version
+pip --version
+Expected Output
+text
+Copy code
+Python 3.x.x
+pip x.x.x
+Step 3: Install Project Dependencies
+From the project root directory:
+
+bash
+Copy code
+pip install flask requests beautifulsoup4 googlesearch-python
+5. Minimal Working Example (Chatbot MVP)
+Project Structure
+text
+Copy code
+CHATBOT/
+│
+├── README.md
+├── main.py
+├── chatbot_app.py
+├── smart_chatbot.py
+├── users_data.json
+│
+├── templates/
+│   └── index.html
+│
+├── static/
+│   ├── css/
+│   │   └── style.css
+│   └── js/
+│       └── script.js
+Core Files Explained
+main.py
+Application entry point that starts the Flask server.
+
+chatbot_app.py
+Defines Flask routes, handles HTTP requests, manages chat history and usernames.
+
+smart_chatbot.py
+Contains chatbot logic, response generation, and optional web search functionality.
+
+How to Run the Chatbot
+Navigate to the Project Directory
+bash
+Copy code
+cd CHATBOT
+Start the Server
+bash
+Copy code
+python main.py
+Open Your Browser
+text
+Copy code
+http://127.0.0.1:5000
+6. Web Application Behavior
+Available Routes
+Route	Method	Description
+/	GET	Serves chatbot UI
+/chat	POST	Sends user message to chatbot
+/history	GET	Retrieves chat history
+/clear	POST	Clears chat history
+/update_username	POST	Saves username
+
+Frontend Interaction Flow
+User types a message
+
+JavaScript sends a request to Flask
+
+Flask processes input using chatbot logic
+
+Response is returned and displayed instantly
+
+7. AI Agents Utilised
+ChatGPT
+
+Claude
+
+Gemini CLI
+
+Phind
+
+Usage
+These tools were used for:
+
+Code scaffolding
+
+Debugging
+
+Documentation writing
+
+Learning Python and Flask patterns
+
+8. AI Prompt Journal (Learning Journey)
+Phase 1: Conceptual Understanding
+Flask vs FastAPI comparison
+
+Separating logic from routes
+
+Managing state using JSON
+
+Phase 2: Chatbot Engine Development
+Rule-based responses
+
+Keyword detection
+
+Web search fallback
+
+Phase 3: Web Integration
+Connecting JavaScript frontend to Flask backend
+
+Handling POST requests
+
+Managing templates and static files
+
+9. Common Issues & Fixes
+Issue	Cause	Fix
+ModuleNotFoundError	Missing dependency	pip install module_name
+TemplateNotFound	Wrong folder name	Ensure templates/ exists
+Static files not loading	Incorrect paths	Use url_for('static')
+Port already in use	Another server running	Stop process or change port
+
+10. References
+Flask Documentation: https://flask.palletsprojects.com/
+
+Python Documentation: https://docs.python.org/3/
+
+MDN Web Docs: https://developer.mozilla.org/
+
+👤 Author
+Joseph Mutemi

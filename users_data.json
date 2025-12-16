@@ -18,40 +18,58 @@
     "username": null,
     "chat_history": [
       {
-        "timestamp": "16:47",
-        "user": "hello",
-        "bot": "Hello! 👋 Ask me anything!",
-        "time": "2025-12-15 16:47:32"
-      },
-      {
-        "timestamp": "16:47",
-        "user": "what is the time",
-        "bot": "⏰ 04:47 PM",
-        "time": "2025-12-15 16:47:40"
-      },
-      {
-        "timestamp": "16:47",
-        "user": "tell me a joke",
-        "bot": "🐻 What do you call a bear with no teeth? A gummy bear!",
-        "time": "2025-12-15 16:47:52"
-      },
-      {
-        "timestamp": "16:48",
-        "user": "that was funny",
-        "bot": "📚 **About That Was Funny:**\n\nRondell Jerome Sheridan is an American actor, comedian and television director, best known for his role of Victor Baxter in the Disney Channel sitcom That's So Raven, as well as its later spin-offs Cory in the House and Raven's Home. Sheridan is an alumnus of Marquette University. Sheridan also starred as Dr. Ron Aimes on the NBC/UPN sitcom Minor Adjustments.\n\n🔗 **Source:** [Wikipedia - Rondell Sheridan](https://en.wikipedia.org/wiki/Rondell_Sheridan)",
-        "time": "2025-12-15 16:48:08"
-      },
-      {
-        "timestamp": "16:48",
-        "user": "who is isaac nwton",
-        "bot": "📚 **About Isaac Nwton:**\n\nSir Isaac Newton was an English polymath who was a mathematician, physicist, astronomer, alchemist, theologian, author and inventor. He was a key figure in the Scientific Revolution and the Enlightenment that followed. His book Philosophiæ Naturalis Principia Mathematica, first published in 1687, achieved the first great unification in physics and established classical mechanics. Newton also made seminal contributions to optics, and shares credit with the German mathematician Gottfried Wilhelm Leibniz for formulating infinitesimal calculus, although he developed calculus years before Leibniz. Newton contributed to and refined the scientific method, and his work is considered the most influential in bringing forth modern science.\n\n🔗 **Source:** [Wikipedia - Isaac Newton](https://en.wikipedia.org/wiki/Isaac_Newton)",
-        "time": "2025-12-15 16:48:37"
-      },
-      {
-        "timestamp": "16:48",
-        "user": "good work",
+        "timestamp": "11:21",
+        "user": "niaje",
         "bot": "Ask me a specific question! 😊",
-        "time": "2025-12-15 16:48:55"
+        "time": "2025-12-16 11:21:47"
+      },
+      {
+        "timestamp": "11:21",
+        "user": "hey whastup",
+        "bot": "Hey! Ready to help!",
+        "time": "2025-12-16 11:21:56"
+      },
+      {
+        "timestamp": "11:22",
+        "user": "who is uhuru kenyatta",
+        "bot": "📚 **About Uhuru Kenyatta:**\n\nUhuru Mũigai Kenyatta is a Kenyan politician who served as the fourth president of Kenya from 2013 to 2022. The son of Jomo Kenyatta, Kenya's first president, he had previously served as Deputy Prime Minister from 2008 to 2013 and as the leader of official opposition from 2003 to 2007.\n\n🔗 **Source:** [Wikipedia - Uhuru Kenyatta](https://en.wikipedia.org/wiki/Uhuru_Kenyatta)",
+        "time": "2025-12-16 11:22:14"
+      },
+      {
+        "timestamp": "11:22",
+        "user": "the capital city of Moscow is",
+        "bot": "I couldn't find information about 'The Capital City Of Moscow Is'. Try these topics:\n• Albert Einstein\n• World War II\n• Roman Empire\n\n💡 **Tip:** Be specific and check spelling!",
+        "time": "2025-12-16 11:22:56"
+      },
+      {
+        "timestamp": "11:23",
+        "user": "The Capital City Of Russia is",
+        "bot": "I couldn't find information about 'The Capital City Of Russia Is'. Try these topics:\n• DNA\n• Albert Einstein\n• Black Holes\n\n💡 **Tip:** Be specific and check spelling!",
+        "time": "2025-12-16 11:23:22"
+      },
+      {
+        "timestamp": "11:23",
+        "user": "what is The Capital City Of Russia",
+        "bot": "I couldn't find information about 'Capital City Of Russia'. Try these topics:\n• Ancient Egypt\n• Leonardo da Vinci\n• DNA\n\n💡 **Tip:** Be specific and check spelling!",
+        "time": "2025-12-16 11:23:53"
+      },
+      {
+        "timestamp": "11:24",
+        "user": "russia",
+        "bot": "Ask me a specific question! 😊",
+        "time": "2025-12-16 11:24:09"
+      },
+      {
+        "timestamp": "11:24",
+        "user": "who is kim jong",
+        "bot": "📚 **About Kim Jong:**\n\nKim Jong may refer to:Kim Jong (金晸), birth name of Heongang of Silla Kim Jong, North Korean Olympic athlete Kim Jong, South Korean Vice Minister of Culture and Sports during the Park Tae-hwan doping scandal\n\n🔗 **Source:** [Wikipedia - Kim Jong](https://en.wikipedia.org/wiki/Kim_Jong)",
+        "time": "2025-12-16 11:24:24"
+      },
+      {
+        "timestamp": "11:24",
+        "user": "who is the president of north korea",
+        "bot": "📚 **About President Of North Korea:**\n\nThe president of the Democratic People's Republic of Korea was the head of state of North Korea from 1972 to 1998. The position was only occupied by Kim Il Sung from 1972 until his death in 1994. Aside from being president, Kim was also the General Secretary of the Workers' Party of Korea, Chairman of the National Defence Commission and Supreme Commander of the Korean People's Army.\n\n🔗 **Source:** [Wikipedia - President of North Korea](https://en.wikipedia.org/wiki/President_of_North_Korea)",
+        "time": "2025-12-16 11:24:57"
       }
     ],
     "created_at": "2025-12-15 16:39:29"
