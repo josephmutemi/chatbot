@@ -106,6 +106,7 @@ From the project root directory:
 bash
 Copy code
 pip install flask requests beautifulsoup4 googlesearch-python
+```
 ## 5. Minimal Working Example (Chatbot MVP)
 
 ### Project Structure
@@ -146,7 +147,7 @@ Open Your Browser
 text
 http://127.0.0.1:5000
 
-6. Web Application Behavior
+## 6. Web Application Behavior
 Available Routes
 Route	Method	Description
 /	GET	Serves chatbot UI
@@ -164,7 +165,7 @@ Flask processes input using chatbot logic
 
 Response is returned and displayed instantly
 
-7. AI Agents Utilised
+## 7. AI Agents Utilised
 ChatGPT
 
 Claude
@@ -184,7 +185,7 @@ Documentation writing
 
 Learning Python and Flask patterns
 
-8. AI Prompt Journal (Learning Journey)
+## 8. AI Prompt Journal (Learning Journey)
 Phase 1: Conceptual Understanding
 Flask vs FastAPI comparison
 
@@ -206,14 +207,14 @@ Handling POST requests
 
 Managing templates and static files
 
-9. Common Issues & Fixes
+## 9. Common Issues & Fixes
 Issue	Cause	Fix
 ModuleNotFoundError	Missing dependency	pip install module_name
 TemplateNotFound	Wrong folder name	Ensure templates/ exists
 Static files not loading	Incorrect paths	Use url_for('static')
 Port already in use	Another server running	Stop process or change port
 
-10. References
+## 10. References
 Flask Documentation: https://flask.palletsprojects.com/
 
 Python Documentation: https://docs.python.org/3/
